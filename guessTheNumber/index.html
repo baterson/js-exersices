@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .app {
+        background-color: lavender;
+        height: 100%;
+        width: 100%;
+        width: 500px;
+        height: 300px;
+        border: 1px solid blueviolet;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px 0 20px;
+      }
+
+      .header {
+        font-weight: 400;
+      }
+
+      .topScreen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid blueviolet;
+      }
+
+      .screen {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      .input {
+        width: 160px;
+        height: 20px;
+      }
+
+      .button {
+        background-color: rgba(0, 0, 255, 0.297);
+        color: white;
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+        border: 0;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .default {
+        color: black;
+      }
+
+      .win {
+        color: rgba(0, 128, 0, 0.475);
+      }
+
+      .lose {
+        color: rgba(255, 0, 0, 0.518);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="header">Guess the number</h1>
+      <div class="topScreen">
+        <div class="default screen">
+          <div id="result">Type number from 1 to 9</div>
+        </div>
+        <div class="screen">
+          <input type="number" class="input" id="input" />
+        </div>
+      </div>
+      <button id="mainButton" class="button">Play</button>
+    </div>
+  </body>
+
+  <script src="index.js" type="module"></script>
+</html>
